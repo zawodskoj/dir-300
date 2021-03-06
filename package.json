@@ -1,0 +1,34 @@
+{
+  "name": "dir-300",
+  "version": "1.0.0",
+  "description": "Typed router built with React and Typescript",
+  "author": "zawodskoj",
+  "license": "EULA",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zawodskoj/dir-300"
+  },
+  "homepage": "http://npm.perfema.com/#/detail/dir-300",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "module": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "publishConfig": {
+    "directory": "dist"
+  },
+  "peerDependencies": {
+    "react": ">16.14.0",
+    "react-dom": ">16.14.0"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.56",
+    "typescript": "4.2.3"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "tsc"
+  }
+}
