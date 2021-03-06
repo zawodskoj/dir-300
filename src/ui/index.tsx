@@ -103,7 +103,6 @@ export function createRouter<C extends object>(slash: Slash<C>): Router {
         Viewport: x => {
             useEffect(() => {
                 const updateState = () => {
-                    console.log(window.location);
                     store.actions.setPath({ rawPath: window.location.hash.substr(1) || "/", replace: true });
                 };
 

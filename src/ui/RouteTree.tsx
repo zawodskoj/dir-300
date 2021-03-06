@@ -56,7 +56,6 @@ export function RouteTree(x: RouteTreeProps) {
     if (!x.nav.store) throw null;
     const s = x.nav.store.use();
     const curProps = s.matched?.props ?? {};
-    console.log("render routeTree");
 
     return <>
         {
